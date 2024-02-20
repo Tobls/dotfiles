@@ -1,0 +1,163 @@
+@import "./colorscheme.scss";
+
+* {
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 1.5rem;
+    border-radius: 0.25em;
+
+    border: unset;
+    background-color: unset;
+}
+
+window#waybar {
+    background: transparent;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+tooltip {
+    background: $background-dark;
+    border: 1px solid $text-darker;
+
+    label {
+        color: $text;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#workspaces {
+    background: $background;
+    margin-right: 5px;
+
+    button {
+
+        background: $background;
+        color: $text;
+
+        &.active, &:hover {
+            color: $blue;
+        }
+
+    }
+}
+
+#window {
+    background: $background;
+    color: $text;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-launcher {
+    background: $background;
+    margin-right: 5px;
+    padding-left: 12px;
+    padding-right: 15px;
+
+    color: $blue;
+}
+
+#custom-shutdown {
+    background: $background;
+    padding-left: 12px;
+    padding-right: 15px;
+
+    color: $red-light;
+}
+
+#clock {
+    margin-right: 5px;
+    background: $background;
+    color: $text;
+    padding-left: 13px;
+    padding-right: 12px;
+}
+
+#battery {
+    background: $background;
+    color: $green;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    &.warning {
+        color: $orange;
+    }
+
+    &.critical{
+        color: $red;
+    }
+}
+
+#bluetooth {
+    background: $background;
+    color: $blue-alt;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+#network {
+    background: $background;
+    color: $grey;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+#pulseaudio {
+    background: $background;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    color: $purple-light;
+}
+
+#cpu {
+    background: $background;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    color: $blue-light;
+}
+
+
+#memory {
+    background: $background;
+    margin-right: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    color: $green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

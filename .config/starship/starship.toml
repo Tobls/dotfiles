@@ -1,0 +1,64 @@
+format = """
+[  ](bg:#C0A36E fg:#1F1F28)\
+$directory\
+$nodejs\
+$rust\
+$php\
+$c\
+$python\
+$git_branch\
+$git_status\
+$character"""
+
+right_format = """
+$cmd_duration"""
+
+[character]
+success_symbol = '[](fg:#E6C384)'
+
+[c]
+symbol = ""
+version_format = "v${major}"
+format = '[[ $symbol $version ](fg:#769ff0 bg:#394260)]($style)'
+
+[directory]
+style = "fg:#1F1F28 bg:#E6C384"
+format = "[ $path ]($style)"
+truncation_length = 2
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+format = '[[ $symbol $branch ](fg:#1F1F28 bg:#E6C384)]($style)'
+
+[git_status]
+format = '[[($all_status$ahead_behind )](fg:#1F1F28 bg:#E6C384)]($style)'
+
+[nodejs]
+symbol = ""
+version_format = "v${major}"
+format = '[[ $symbol ($version) ](fg:#1F1F28 bg:#98BB6C)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[python]
+symbol = ""
+format = "${symbol}${pyenv_prefix}(${version} )($virtualenv )]($style)"
+
+[cmd_duration]
+format = "took [$duration]($style)"
+min_time_to_notify = 100

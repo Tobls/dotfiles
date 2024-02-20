@@ -1,0 +1,106 @@
+* {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 1.5rem;
+  border-radius: 0.25em;
+  border: unset;
+  background-color: unset; }
+
+window#waybar {
+  background: transparent;
+  transition-duration: .5s; }
+
+window#waybar.hidden {
+  opacity: 0.2; }
+
+window#waybar.empty #window {
+  background-color: transparent; }
+
+tooltip {
+  background: #16161D;
+  border: 1px solid #C8C093; }
+  tooltip label {
+    color: #DCD7BA;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0; }
+
+#workspaces {
+  background: #1F1F28;
+  margin-right: 5px; }
+  #workspaces button {
+    background: #1F1F28;
+    color: #DCD7BA; }
+    #workspaces button.active, #workspaces button:hover {
+      color: #72A7BC; }
+
+#window {
+  background: #1F1F28;
+  color: #DCD7BA;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#custom-launcher {
+  background: #1F1F28;
+  margin-right: 5px;
+  padding-left: 12px;
+  padding-right: 15px;
+  color: #72A7BC; }
+
+#custom-shutdown {
+  background: #1F1F28;
+  padding-left: 12px;
+  padding-right: 15px;
+  color: #C34043; }
+
+#clock {
+  margin-right: 5px;
+  background: #1F1F28;
+  color: #DCD7BA;
+  padding-left: 13px;
+  padding-right: 12px; }
+
+#battery {
+  background: #1F1F28;
+  color: #98BB6C;
+  margin-right: 5px;
+  padding-right: 12px;
+  padding-left: 12px; }
+  #battery.warning {
+    color: #E6C384; }
+  #battery.critical {
+    color: #E82424; }
+
+#bluetooth {
+  background: #1F1F28;
+  color: #7E9CD8;
+  margin-right: 5px;
+  padding-right: 12px;
+  padding-left: 12px; }
+
+#network {
+  background: #1F1F28;
+  color: #727169;
+  margin-right: 5px;
+  padding-right: 12px;
+  padding-left: 12px; }
+
+#pulseaudio {
+  background: #1F1F28;
+  margin-right: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #938AA9; }
+
+#cpu {
+  background: #1F1F28;
+  margin-right: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #7FB4CA; }
+
+#memory {
+  background: #1F1F28;
+  margin-right: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #98BB6C; }

@@ -7,6 +7,7 @@ alias pacmanclean='sudo pacman -Rns $(pacman -Qtdq)'
 alias vim='nvim'
 
 alias gs='git status'
+alias gc='git commit -m $1'
 
 alias ls="lsd"
 alias lt="ls --tree"
@@ -30,3 +31,4 @@ eval "$(zoxide init --cmd cd bash)"
 
 eval "$(starship init bash)"
 export STARSHIP_CONFIG=/home/tobey/.config/starship/starship.toml
+. "$HOME/.cargo/env"

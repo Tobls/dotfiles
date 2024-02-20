@@ -6,20 +6,18 @@ $rust\
 $php\
 $c\
 $python\
+$git_metrics\
 $git_branch\
-$git_status\
 $character"""
 
-right_format = """
-$cmd_duration"""
-
 [character]
-success_symbol = '[](fg:#E6C384)'
+success_symbol = "[](fg:#E6C384)"
+error_symbol = "[](fg:#E6C384)"
 
 [c]
 symbol = ""
-version_format = "v${major}"
-format = '[[ $symbol $version ](fg:#769ff0 bg:#394260)]($style)'
+version_format = " v${major}"
+format = '[[ $symbol($version) ](fg:#1F1F28 bg:#727169)]($style)'
 
 [directory]
 style = "fg:#1F1F28 bg:#E6C384"
@@ -37,27 +35,29 @@ truncation_symbol = "…/"
 symbol = ""
 format = '[[ $symbol $branch ](fg:#1F1F28 bg:#E6C384)]($style)'
 
-[git_status]
-format = '[[($all_status$ahead_behind )](fg:#1F1F28 bg:#E6C384)]($style)'
+[git_metrics]
+disabled = false
+format = '[[+$added](fg:#76946A bg:#E6C384)/[-$deleted](fg:#C34043 bg:#E6C384)](fg:#1F1F28 bg:#E6C384)'
 
 [nodejs]
 symbol = ""
-version_format = "v${major}"
-format = '[[ $symbol ($version) ](fg:#1F1F28 bg:#98BB6C)]($style)'
+version_format = " v${major}"
+format = '[[ $symbol($version) ](fg:#1F1F28 bg:#98BB6C)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+version_format = " v${major}.${minor}"
+format = '[[ $symbol($version) ](fg:#1F1F28 bg:#C34043)]($style)'
 
 [php]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+version_format = " v${major}.${minor}"
+format = '[[ $symbol($version) ](fg:#1F1F28 bg:#957FB8)]($style)'
 
 [python]
 symbol = ""
-format = "${symbol}${pyenv_prefix}(${version} )($virtualenv )]($style)"
+version_format = " v${major}.${minor}"
+format = "[[ $symbol($version) ($virtualenv )](fg:#1F1F28 bg:#7E9CD8)]($style)"
 
 [cmd_duration]
 format = "took [$duration]($style)"

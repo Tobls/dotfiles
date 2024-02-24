@@ -8,6 +8,7 @@ alias vim='nvim'
 
 alias gs='git status'
 alias gc='git commit -m $1'
+alias ga='git add $1'
 
 alias ls="lsd"
 alias lt="ls --tree"

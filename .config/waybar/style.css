@@ -1,6 +1,6 @@
 * {
   font-family: "JetBrainsMono Nerd Font Mono";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border-radius: 0.25em;
   border: unset;
   background-color: unset; }
@@ -20,7 +20,7 @@ tooltip {
   border: 1px solid #C8C093; }
   tooltip label {
     color: #DCD7BA;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 0;
     padding: 0; }
 
